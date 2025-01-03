@@ -2,7 +2,6 @@
 
 A modern, responsive portfolio website to showcase my skills, projects, and contact information. Built using React, TailwindCSS, and other cutting-edge technologies, this website serves as a personal branding tool for potential employers and collaborators.
 
----
 
 ## 🚀 Features
 
@@ -12,7 +11,6 @@ A modern, responsive portfolio website to showcase my skills, projects, and cont
 - **Project Portfolio**
 - **Contact Section**
 
----
 
 ## 🛠️ Technologies Used
 
@@ -22,7 +20,6 @@ A modern, responsive portfolio website to showcase my skills, projects, and cont
 - **Vite**
 - **PostCSS**
 
----
 
 ## 🎨 Design Highlights
 
@@ -40,13 +37,11 @@ A modern, responsive portfolio website to showcase my skills, projects, and cont
 - Desktop: Horizontal menu with hover effects.
 - Mobile: Slide-in menu with a toggle button.
 
----
 
 ## 🖥️ Live Demo
 
 [Visit the Live Website](https://my-portfolio-five-gold-11.vercel.app/)  
 
----
 
 ## 🛠️ Installation and Setup
 
@@ -65,7 +60,6 @@ Follow these steps to run the project locally:
    ```bash
     npm run dev
 
----
 
 ## 🙌 Acknowledgments
 
@@ -74,13 +68,11 @@ Follow these steps to run the project locally:
 - React Icons
 - AOS
 
----
 
 ## 📝 License
 This project is licensed under the MIT License.
 Feel free to use, modify, and distribute as per the terms of the license.
 
----
 
 ## 📧 Contact
 If you have any questions or suggestions, feel free to reach out:
