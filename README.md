@@ -44,7 +44,7 @@ A modern, responsive portfolio website to showcase my skills, projects, and cont
 
 ## 🖥️ Live Demo
 
-[Visit the Live Website](https://my-portfolio-chiamaka-uyannas-projects.vercel.app/)  
+[Visit the Live Website](https://my-portfolio-five-gold-11.vercel.app/)  
 
 ---
 
@@ -54,7 +54,7 @@ Follow these steps to run the project locally:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/yourusername/portfolio-website.git
+   git clone https://github.com/chiamakauyanna/my-portfolio
    cd portfolio-website
    
 2. **Install Dependencies**:
