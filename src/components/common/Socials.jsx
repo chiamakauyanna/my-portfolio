@@ -3,10 +3,18 @@ import { FaFacebookF, FaGithub, FaInstagram, FaTwitter } from "react-icons/fa"
 const Socials = () => {
   return (
     <div className="text-accent flex gap-8 mt-6">
-      <FaFacebookF/>
-      <FaInstagram/>
-      <FaTwitter/>
-      <FaGithub/>
+      <div className="socials">
+        <FaFacebookF />
+      </div>
+      <div className="socials">
+      <FaInstagram />
+      </div> 
+      <div className="socials">
+      <FaTwitter />
+      </div>
+      <div className="socials">
+      <FaGithub />
+      </div>
     </div>
   )
 }

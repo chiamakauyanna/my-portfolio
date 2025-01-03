@@ -1,17 +1,17 @@
-import { FaAngleUp } from "react-icons/fa"
+import { FaAngleUp } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="h-full w-screen py-6 flex justify-between px-14 bg-secondary text-text">
-      <p>
-      &copy;2023 Chiamaka Uyanna, All Rights Reserved
-      </p>
-      <div className="p-2 rounded-full bg-accent flex items-center">
-        <FaAngleUp/>
-      </div>
-      
-    </div>
-  )
-}
+    <footer className="h-full w-screen py-6 flex justify-between px-14 gap-4 bg-secondary text-textColor">
+      <p className=" lg:text-base md:text-md text-sm">&copy;2023 Chiamaka Uyanna, All Rights Reserved</p>
+      <a href="#home">
+        <div className="p-2 rounded-full bg-accent flex items-center">
+          {" "}
+          <FaAngleUp />
+        </div>{" "}
+      </a>
+    </footer>
+  );
+};
 
-export default Footer
+export default Footer;

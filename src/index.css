@@ -2,14 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
-h1{
-  font-size: 4rem;
+html {
+  scroll-behavior: smooth;
 }
 
-h2{
-  font-size: 2.9rem;
+h1 {
+  @apply lg:text-h1 text-h1-sm;
 }
 
-p{
-  font-size: 1rem;
+h2 {
+  @apply lg:text-h2 text-h2-sm ;
+}
+
+p {
+  @apply text-p ;
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-accent text-gray-900 px-4 py-2 rounded hover:border border-accent hover:text-accent hover:bg-primary hover:shadow-md hover:shadow-accent transition ease-in-out duration-300 hover:scale-110 font-semibold lg:text-base md:text-sm text-sm;
+  }
+
+  .btn-secondary {
+    @apply bg-transparent border-2 border-accent text-accent py-2 px-4 rounded hover:bg-accent hover:text-primary hover:shadow-md hover:shadow-accent transition ease-in-out duration-300 hover:scale-110 font-semibold lg:text-base md:text-sm text-sm
+  }
+
+  .socials {
+    @apply hover:scale-110 hover:shadow-md hover:shadow-accent rounded-full
+  }
 }

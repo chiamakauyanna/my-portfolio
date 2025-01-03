@@ -4,76 +4,58 @@ import { FaBars, FaTimes } from "react-icons/fa";
 const NavBar = () => {
     const [isNavOpen, setIsNavOpen] = useState(false);
 
-    const toggleNav = () => {
-        setIsNavOpen(!isNavOpen);
-    };
+    const toggleNav = () => setIsNavOpen(!isNavOpen);
+
+    const links = [
+        { url: "#", title: "Home" },
+        { url: "#about", title: "About" },
+        { url: "#skills", title: "Skills" },
+        { url: "#portfolio", title: "Portfolio" },
+        { url: "#contact", title: "Contact" },
+    ];
 
     return (
         <nav>
             {/* Desktop Menu */}
-            <div className="hidden md:block lg:block">
-                <ul className="flex gap-6 text-lg">
-                    <li className="hover:border-b-2 hover:border-accent hover:scale-110 border-b border-primary hover:transition duration-300 ease-linear">
-                        <a href="/">Home</a>
-                    </li>
-                    <li className="hover:border-b-2 hover:border-accent hover:scale-110 border-b border-primary hover:transition duration-300 ease-linear">
-                        <a href="/about">About</a>
-                    </li>
-                    <li className="hover:border-b-2 hover:border-accent hover:scale-110 border-b border-primary hover:transition duration-300 ease-linear">
-                        <a href="/services">Services</a>
-                    </li>
-                    <li className="hover:border-b-2 hover:border-accent hover:scale-110 border-b border-primary hover:transition duration-300 ease-linear">
-                        <a href="/portfolio">Portfolio</a>
-                    </li>
-                    <li className="hover:border-b-2 hover:border-accent hover:scale-110 border-b border-primary hover:transition duration-300 ease-linear">
-                        <a href="/contact">Contact</a>
-                    </li>
+            <div className="hidden md:block">
+                <ul className="flex gap-6 text-lg text-other">
+                    {links.map(({ url, title }) => (
+                        <li key={title}>
+                            <a
+                                href={url}
+                                className="hover:border-b-2 hover:border-accent hover:scale-110 border-b border-primary transition duration-300 ease-linear hover:text-accent hover:shadow-md"
+                            >
+                                {title}
+                            </a>
+                        </li>
+                    ))}
                 </ul>
             </div>
 
             {/* Mobile Menu Button */}
-            <div className="md:hidden lg:hidden block">
-                <div
+            <div className="md:hidden">
+                <button
                     onClick={toggleNav}
                     aria-label={isNavOpen ? "Close menu" : "Open menu"}
-                    className="focus:outline-none"
+                    className="focus:outline-none text-2xl text-other"
                 >
-                    {isNavOpen ? (
-                        <FaTimes className="size-6" />
-                    ) : (
-                        <FaBars className="size-6" />
-                    )}
-                </div>
+                    {isNavOpen ? <FaTimes /> : <FaBars />}
+                </button>
             </div>
 
             {/* Mobile Menu */}
             {isNavOpen && (
-                <ul className="bg-primary absolute top-20 right-0 h-screen w-1/2 py-4 px-10 space-y-8 text-lg lg:hidden md:hidden block">
-                    <li className="text-text">
-                        <a href="/" onClick={toggleNav}>
-                            Home
-                        </a>
-                    </li>
-                    <li className="text-text">
-                        <a href="/about" onClick={toggleNav}>
-                            About
-                        </a>
-                    </li>
-                    <li className="text-text">
-                        <a href="/services" onClick={toggleNav}>
-                            Services
-                        </a>
-                    </li>
-                    <li className="text-text">
-                        <a href="/portfolio" onClick={toggleNav}>
-                            Portfolio
-                        </a>
-                    </li>
-                    <li className="text-text">
-                        <a href="/contact" onClick={toggleNav}>
-                            Contact
-                        </a>
-                    </li>
+                <ul className="bg-primary absolute top-20 right-0 h-screen w-1/2 py-4 px-10 space-y-8 text-lg lg:hidden md:hidden block text-other">
+                    {links.map(({ url, title }) => (
+                        <li key={title} className="hover:text-accent duration-300 transition ease-in-out">
+                            <a
+                                href={url}
+                                onClick={toggleNav}
+                            >
+                                {title}
+                            </a>
+                        </li>
+                    ))}
                 </ul>
             )}
         </nav>
