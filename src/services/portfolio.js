@@ -1,7 +1,7 @@
 import Project1 from "../../public/assets/images/movie.png";
 import Project2 from "../../public/assets/images/pricing.png";
 import Project3 from "../../public/assets/images/quotes.png";
-import Project4 from "../../public/assets/images/todo.png";
+import Project4 from "../../public/assets/images/Todo.png";
 import Project5 from "../../public/assets/images/temperature-converter.png";
 import Project6 from "../../public/assets/images/pricing-plan.png";
 
