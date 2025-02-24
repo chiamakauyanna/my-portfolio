@@ -2,7 +2,7 @@ import { skills } from "../../services/Skills";
 
 const SkillsCard = () => {
   return (
-    <ul className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6">
+    <ul className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-2 gap-6">
       {skills.map((skill) => 
       <li className="border border-transparent shadow-md shadow-accent rounded-2xl py-6 bg-secondary" key={skill.id}>
         <div className="flex flex-col gap-4 items-center">

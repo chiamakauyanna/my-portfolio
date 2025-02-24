@@ -20,7 +20,7 @@ const App = () => {
   }, []);
   
   return (
-    <div className="font-inter overflow-x-hidden">
+    <div className="font-ubuntu overflow-x-hidden">
       <Header />
       <Hero />
       <About />
