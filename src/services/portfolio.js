@@ -4,7 +4,7 @@ import Project3 from "../../src/assets/images/ticket-gen.png";
 import Project4 from "../../src/assets/images/Pricing-plan.png";
 import Project5 from "../../src/assets/images/quotes.png";
 import Project6 from "../../src/assets/images/todo.png";
-import Project7 from "../../src/assets/images/Temperature-Converter.png";
+import Project7 from "../../src/assets/images/Temperature-converter.png";
 import Project8 from "../../src/assets/images/Calc.png";
 
 export const projects = [
