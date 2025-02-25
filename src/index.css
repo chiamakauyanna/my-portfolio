@@ -30,6 +30,6 @@ p {
   }
 
   .socials {
-    @apply hover:scale-110 hover:shadow-md hover:shadow-accent rounded-full
+    @apply hover:scale-110 hover:shadow-md hover:shadow-accent rounded-full lg:transform lg:-rotate-90
   }
 }

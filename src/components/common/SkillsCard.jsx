@@ -6,8 +6,8 @@ const SkillsCard = () => {
       {skills.map((skill) => 
       <li className="border border-transparent shadow-md shadow-accent rounded-2xl py-6 bg-secondary" key={skill.id}>
         <div className="flex flex-col gap-4 items-center">
-          <div className="size-12">
-            <img src={skill.img} alt="html image"/>
+          <div className="w-12 h-12">
+            <img src={skill.img} alt={skill.text}/>
           </div>
           <p className="font-semibold text-lg">{skill.text}</p>
         </div>

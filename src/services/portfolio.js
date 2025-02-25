@@ -68,7 +68,7 @@ export const projects = [
     img: Project8,
     title: "Calculator",
     description:
-      "A utility application for converting temperatures between Celsius and Fahrenheit. Built for simplicity and ease of use.",
+      "A calculator with basic functionality built with html, css and JavaScript.",
     link: "https://github.com/chiamakauyanna/calculator",
   },
   // {
